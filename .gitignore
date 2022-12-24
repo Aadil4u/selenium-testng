@@ -1,0 +1,5 @@
+.idea
+.settings
+Screenshots/*
+test-output
+.classpath
