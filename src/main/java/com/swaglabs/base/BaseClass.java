@@ -11,22 +11,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
+import com.swaglabs.utility.ExtentManager;
 
 public class BaseClass {
 	public static Properties prop;
-	
+
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-	
-	
-	
-	private static synchronized WebDriver getDriver() {
+
+	public static synchronized WebDriver getDriver() {
 		return driver.get();
 	}
- 	
-	@BeforeSuite(groups = {"Smoke", "Sanity", "Regression"})
+
+	@BeforeSuite(groups = { "Smoke", "Sanity", "Regression" })
 	public void loadConfig() {
+		ExtentManager.setExtent();
 		DOMConfigurator.configure("log4j.xml");
 		try {
 			prop = new Properties();
@@ -40,23 +40,29 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
+	@AfterSuite(groups = { "Smoke", "Sanity", "Regression" })
+	public void afterSuite() {
+		ExtentManager.endReport();
+	}
+
 	public static WebDriver launchApp(String browserName) {
 //		String browserName = prop.getProperty("browser");
-		
+
 		if (browserName.equalsIgnoreCase("chrome")) {
-			driver.set(new ChromeDriver());
+			driver.set(new ChromeDriver()); 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver.set(new FirefoxDriver());
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver.set(new EdgeDriver());
 		}
-		
+
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(prop.getProperty("implicitWait"))));
-		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Integer.parseInt(prop.getProperty("pageLoadTimeOut"))));
+		getDriver().manage().timeouts()
+				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(prop.getProperty("implicitWait"))));
+		getDriver().manage().timeouts()
+				.pageLoadTimeout(Duration.ofSeconds(Integer.parseInt(prop.getProperty("pageLoadTimeOut"))));
 		getDriver().get(prop.getProperty("url"));
 		return getDriver();
 	}
