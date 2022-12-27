@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 47.741 s <<< FAILURE! - in TestSuite
+com.swaglabs.testcases.LoginPageTest.verifyLogin  Time elapsed: 1.132 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at com.swaglabs.testcases.LoginPageTest.verifyLogin(LoginPageTest.java:37)
+

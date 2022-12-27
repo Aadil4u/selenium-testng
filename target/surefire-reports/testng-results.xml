@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="17" total="23" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-27T17:19:44 IST" name="Suite" finished-at="2022-12-27T17:20:29 IST" duration-ms="45250">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" name="verifyLogin" class="com.swaglabs.testcases.LoginPageTest"/>
+        <method signature="ProductsDetailsPageTest.verifyProductDetails()[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" name="verifyProductDetails" class="com.swaglabs.testcases.ProductsDetailsPageTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" name="verifyLogin" class="com.swaglabs.testcases.LoginPageTest"/>
+        <method signature="OverviewPageTest.verifyOrderTotal()[pri:0, instance:com.swaglabs.testcases.OverviewPageTest@5ffead27]" name="verifyOrderTotal" class="com.swaglabs.testcases.OverviewPageTest"/>
+        <method signature="ProductsDetailsPageTest.verifyProductDetails()[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" name="verifyProductDetails" class="com.swaglabs.testcases.ProductsDetailsPageTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-12-27T17:19:44 IST" name="Test" finished-at="2022-12-27T17:20:29 IST" duration-ms="45250">
+      <class name="com.swaglabs.testcases.ProductsDetailsPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" started-at="2022-12-27T17:19:43 IST" name="loadConfig" finished-at="2022-12-27T17:19:44 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" started-at="2022-12-27T17:19:44 IST" name="setup" finished-at="2022-12-27T17:19:50 IST" duration-ms="6367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyProductDetails()[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" started-at="2022-12-27T17:19:50 IST" name="verifyProductDetails" finished-at="2022-12-27T17:19:55 IST" duration-ms="4985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" started-at="2022-12-27T17:19:55 IST" name="tearDown" finished-at="2022-12-27T17:19:56 IST" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.swaglabs.testcases.ProductsDetailsPageTest@3ce1e309]" started-at="2022-12-27T17:20:29 IST" name="afterSuite" finished-at="2022-12-27T17:20:30 IST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.swaglabs.testcases.ProductsDetailsPageTest -->
+      <class name="com.swaglabs.testcases.OverviewPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.swaglabs.testcases.OverviewPageTest@5ffead27]" started-at="2022-12-27T17:20:19 IST" name="setup" finished-at="2022-12-27T17:20:23 IST" duration-ms="3900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyOrderTotal()[pri:0, instance:com.swaglabs.testcases.OverviewPageTest@5ffead27]" started-at="2022-12-27T17:20:23 IST" name="verifyOrderTotal" finished-at="2022-12-27T17:20:29 IST" duration-ms="6092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderTotal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.OverviewPageTest@5ffead27]" started-at="2022-12-27T17:20:29 IST" name="tearDown" finished-at="2022-12-27T17:20:29 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swaglabs.testcases.OverviewPageTest -->
+      <class name="com.swaglabs.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:19:57 IST" name="setup" finished-at="2022-12-27T17:19:59 IST" duration-ms="2547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:19:59 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-12-27T17:20:00 IST" duration-ms="819" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.swaglabs.testcases.LoginPageTest.verifyLogin(LoginPageTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:01 IST" name="tearDown" finished-at="2022-12-27T17:20:01 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:01 IST" name="setup" finished-at="2022-12-27T17:20:04 IST" duration-ms="2847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:04 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-12-27T17:20:05 IST" duration-ms="1297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:05 IST" name="tearDown" finished-at="2022-12-27T17:20:05 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:05 IST" name="setup" finished-at="2022-12-27T17:20:08 IST" duration-ms="2203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:08 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-12-27T17:20:14 IST" duration-ms="6727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:14 IST" name="tearDown" finished-at="2022-12-27T17:20:15 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:15 IST" name="setup" finished-at="2022-12-27T17:20:17 IST" duration-ms="2466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:17 IST" name="verifyLogin" data-provider="credentials" finished-at="2022-12-27T17:20:18 IST" duration-ms="1201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.LoginPageTest@694abbdc]" started-at="2022-12-27T17:20:18 IST" name="tearDown" finished-at="2022-12-27T17:20:19 IST" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swaglabs.testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

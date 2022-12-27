@@ -768,10 +768,7 @@ public class Action extends BaseClass implements ActionInterface {
 		} catch (Exception e) {
 			e.getMessage();
 		}
-		// This new path for jenkins
-		String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename
-				+ "_" + dateName + ".png";
-		return newImageString;
+		return destination;
 	}
 
 	@Override
